@@ -1,0 +1,54 @@
+{
+  "name": "ng5-select2-ex",
+  "version": "0.0.1",
+  "description": "Angular5 wrapper for select2",
+  "main": "dist/ng5-select2.bundle.js",
+  "jsnext:main": "dist/ng5-select2.js",
+  "typings": "dist/ng5-select2.d.ts",
+  "module": "dist/ng5-select2.js",
+  "types": "dist/ng5-select2.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangxianfu/ng5-select2.git"
+  },
+  "keywords": [
+    "angular5",
+    "select2",
+    "wrap"
+  ],
+  "author": "jiangxf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jiangxianfu/ng5-select2/issues"
+  },
+  "homepage": "https://github.com/jiangxianfu/ng5-select2",
+  "scripts": {
+    "finish": "mv lib/ng5-select2.component.ts.bak lib/ng5-select2.component.ts && cp README.md dist && rimraf dist/ng5-select2.component.css",
+    "build": "rimraf dist && ts-node tools/inline-styles.ts && tsc -p tsconfig-esm.json && rollup -c rollup.config.js dist/ng5-select2.js > dist/ng5-select2.bundle.js && cp package.json dist && ts-node tools/cleanup.ts && npm run finish"
+  },
+  "dependencies": {
+    "@types/jquery": "^2.0.39",
+    "@types/select2": "^4.0.41"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=5.2.0"
+  },
+  "devDependencies": {
+    "@angular/common": "^5.2.0",
+    "@angular/compiler": "^5.2.0",
+    "@angular/compiler-cli": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "@angular/platform-browser": "^5.2.0",
+    "@angular/platform-browser-dynamic": "^5.2.0",
+    "@types/node": "~6.0.60",
+    "core-js": "^2.4.1",
+    "rimraf": "^2.5.4",
+    "rxjs": "^5.0.3",
+    "ts-node": "^7.0.0",
+    "typescript": "~2.5.3",
+    "zone.js": "^0.8.19"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
