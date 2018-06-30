@@ -1,4 +1,3 @@
-/// <reference types="select2"/>
 import {
     AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, OnChanges, OnDestroy,
     Output, SimpleChanges, ViewChild, ViewEncapsulation, Renderer, OnInit
