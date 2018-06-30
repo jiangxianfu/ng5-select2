@@ -1,6 +1,6 @@
 {
   "name": "ng5-select2-ex",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular5 wrapper for select2",
   "main": "dist/ng5-select2.bundle.js",
   "jsnext:main": "dist/ng5-select2.js",
